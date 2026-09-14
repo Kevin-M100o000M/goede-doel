@@ -1,16 +1,117 @@
+@font-face {
+    font-family: inria-sans-bold;
+    src: url(Inria_Sans/InriaSans-Bold.ttf);
+}
+body{
+    font-family: inria-sans-bold;
+}
 nav{
     background-color: white;
     display: flex;
     flex-direction: row-reverse;
-    filter: drop-shadow(0px 8px 4px);
+    gap: 0.8em;
+    filter: drop-shadow(0px 8px 4px rgba(0,0,0, 0.25));
+    position: absolute;
+    padding: 2em;
+    left: 0;
+    right:  0;
+    top: 0;
+
 }
 li{
     color:  #87CBC9;
+    font-size: 30px;
     list-style-type: none;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.block{
-    border: black solid 3px;
+
+a{
+    color:  #87CBC9;
+    text-decoration: none;
+}
+
+.layout-box{
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    row-gap: 20vh;
+}
+
+.top-logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0%;
+    padding: 0%;
+    width: 40rem;
+    height: auto;
+}
+.doe-gift-button{
+    background-color: #E94264;
     color: white;
-    background-color: #87CBC9;
+    padding-inline: 1.2em;
+    margin-left: 1em;
+    border-radius: 86px;
 }
+
+.doe-gift-kleur{
+    color: white;
+}
+
+.main-layout{
+    display: grid;
+    grid-template-rows:2fr;
+    justify-content: center;
+}
+
+.steun-ons{
+}
+
+.banner{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+}
+
+.sectie-tekst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.kop-tekst-sectie{
+    color: #184180 ;
+    font-size: 3em;
+}
+
+.top-tekst-sectie{
+    color:firebrick ;
+}
+
+.place-blocks{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 2em;
+}
+
+.icon{
+    position: absolute;
+    width: 4em ;
+}
+
+.block{
+    background-color: #87CBC9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+}
+
+/* .block-kop-tekst{ */
+    /* align-self: center; */
+/* } */
