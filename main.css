@@ -1,9 +1,19 @@
 @font-face {
+    font-family: inria-sans-regular;
+    src: url(Inria_Sans/InriaSans-Regular.ttf);
+}
+@font-face {
     font-family: inria-sans-bold;
     src: url(Inria_Sans/InriaSans-Bold.ttf);
 }
-body{
+
+@font-face {
     font-family: inria-sans-bold;
+    src: url(Inria_Sans/InriaSans-Bold.ttf);
+}
+
+body{
+    font-family: inria-sans-regular;
 }
 nav{
     background-color: white;
@@ -20,6 +30,7 @@ nav{
 }
 li{
     color:  #87CBC9;
+    font-family: inria-sans-bold;
     font-size: 30px;
     list-style-type: none;
     padding-top: 20px;
@@ -31,11 +42,11 @@ a{
     text-decoration: none;
 }
 
-.layout-box{
-    display: grid;
-    grid-template-rows: 2fr 2fr;
-    row-gap: 20vh;
-}
+/* .layout-box{ */
+    /* display: grid; */
+    /* grid-template-rows:1fr; */
+    /* row-gap: 5vh; */
+/* } */
 
 .top-logo{
     position: absolute;
@@ -43,7 +54,7 @@ a{
     top: 0;
     margin: 0%;
     padding: 0%;
-    width: 40rem;
+    width: 30rem;
     height: auto;
 }
 .doe-gift-button{
@@ -67,6 +78,46 @@ a{
 .steun-ons{
 }
 
+.place-topbox{
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 1fr ; */
+    /* place-items: space-between; */
+    /* gap: 2.7em; */
+    /* grid-column-gap: 5em; */
+    /* grid-row-gap: 6em; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8.5%;
+}
+
+.topbox{
+    /* background-color: #F18623; */
+    color: #184180 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+    width: 22em;
+    height: 11em;
+}
+
+.top-tekst{
+    font-family: inria-sans-regular;
+    display: inline;
+    text-align: left;
+    font-size: 20px;
+    width: 120%;
+}
+
+video{
+    width: 22em;
+    height: 11em;
+}
+
 .banner{
     position: absolute;
     width: 100%;
@@ -86,6 +137,7 @@ a{
     justify-content: center;
     width: 340px;
     height: 134px;
+    font-family: inria-sans-bold;
     font-size: 42px;
     filter: drop-shadow(0px 8px 4px rgba(0,0,0, 0.25));
 }
@@ -95,29 +147,35 @@ a{
     flex-direction: column;
     align-items: center;
     margin-top: 20%;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
 }
 
 .kop-tekst-sectie{
     color: #184180 ;
+    font-family: inria-sans-bold;
     font-size: 3.9em;
 }
 
 .top-tekst-sectie{
     color: #184180 ;
-    font-size: 1em;
+    font-size: 1.7em;
 }
 
 .place-blocks{
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    place-items: center;
+    /* gap: 2.7em; */
+    grid-column-gap: 5em;
+    grid-row-gap: 6em;
+    padding: 8.5%;
 }
 
 .icon{
-    /* margin-left: 10%;  */
-    /* position: absolute; */
-    width: 4em ;
+    margin-bottom: 14%; 
+    position: absolute;
+    width: 5.4em ;
 }
 
 .block{
@@ -125,13 +183,148 @@ a{
     color: white;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;    
     align-items: center;
     text-align: center;
     padding: 10%;
-    width: 435px;
+    width: 22em;
+    height: 11em;
 }
 
-/* .block-kop-tekst{ */
-    /* align-self: center; */
-/* } */
+section.steun-ons .block:nth-of-type(1){
+    background-color: #FBCDAB;
+}
+
+section.steun-ons .block:nth-of-type(2){
+    background-color: #F18623;
+}
+
+section.steun-ons .block:nth-of-type(3){
+    background-color: #F39998;
+}
+
+section.steun-ons .block:nth-of-type(5){
+    background-color: #E94264;
+}
+
+section.steun-ons .block:nth-of-type(6){
+    background-color: #72AB99;
+}
+
+
+section.over-ons .block:nth-of-type(1){
+    background-color: #72AB99;
+}
+
+section.over-ons .block:nth-of-type(2){
+    background-color: #72AB99;
+    background-color: #E94264;
+}
+
+section.over-ons .block:nth-of-type(3){
+    background-color: #F18623;
+}
+
+
+.block-kop-tekst{
+    font-family: inria-sans-bold;
+    display: inline;
+    text-align: center;
+    font-size: 29px;
+    width: 120%;
+}
+
+
+.raak-tekst{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 20%;
+    margin-bottom: 0%;
+    color: #E94264;
+}
+
+.raakpunt-kop-tekst{
+    /* width: 100%; */
+    display: inline-block;
+    text-align: left;
+    align-self: left;
+    padding-left: 10%;
+    /* padding-right: 50%; */
+}
+
+.raakpunt-tekst{
+    padding-left: 10%;
+    padding-right: 35%;
+    font-size: 18.5px;
+}
+
+.raak-image{
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.raakpunt .raak-image:nth-of-type(1){
+    background-image: url(images/Raakpunt/kan\ bestan\ open\ zonder.jpg) ;
+}
+
+section.raakpunt .raak-image:nth-of-type(2){
+    background-image: url(images/Raakpunt/JesFest2026.jpg) ;
+}
+
+section.raakpunt .raak-image:nth-of-type(3){
+    background-image: url(images/Raakpunt/Bogaert-Inge-2.jpg) ;
+}
+
+.raak-blok{
+    background-color: white;
+    color: #87CBC9;
+    /* margin-right: 50%; */
+    padding: 0.5em;
+    font-family: inria-sans-bold;
+}
+
+
+.block{
+    background-color: #87CBC9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+}
+
+/* .doe-gift{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.doe-gift div:last-child{
+    align-items: center;
+    float: center;
+    color: red;
+    background-color: goldenrod;
+}
+
+section .doe-gift:nth-of-type(4){
+    background-color: red;
+    align-items: center;
+    color: red;
+}
+
+.formulier-doe-gift{
+    /* background-color: #87CBC9; */
+    /* color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding: 10%;
+    width: 22em;
+    height: 11em;
+}
