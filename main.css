@@ -130,7 +130,7 @@ video{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 12%;
     margin-left: 3.5%;
     position: absolute;
     color: #184180;
@@ -261,10 +261,14 @@ section.over-ons .block:nth-of-type(3){
 
 .raak-image{
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: end;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 10%;
+    width: 22em;
+    height: 11em;
 }
 
 section.raakpunt .raak-image:nth-of-type(1){
@@ -288,16 +292,6 @@ section.raakpunt .raak-image:nth-of-type(3){
 }
 
 
-.block{
-    background-color: #87CBC9;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-    align-items: center;
-    text-align: center;
-    padding: 10%;
-}
 
 /* .doe-gift{
     display: flex;
@@ -305,26 +299,219 @@ section.raakpunt .raak-image:nth-of-type(3){
     align-items: center;
 } */
 
-.doe-gift div:last-child{
+/* .doe-gift div:last-child{
     align-items: center;
     float: center;
     color: red;
     background-color: goldenrod;
-}
+} */
 
-section .doe-gift:nth-of-type(4){
-    background-color: red;
-    align-items: center;
-    color: red;
+.place-formulier{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 40%; */
+    /* margin-right: 40%; */
+    margin-top: 25%;
+    margin-bottom: 10%;
 }
 
 .formulier-doe-gift{
-    /* background-color: #87CBC9; */
+    background-color: #CBE7E6;
+    /* color: red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-self: center;
+    justify-self: center;
+    padding: 3.5%;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    width: 46em;
+    height: 40em;
+}
+
+.formulier-houder{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.5fr 1fr ;
+    /* margin-top: 5%; */
+}
+
+section.doe-gift .formulier-houder:nth-of-type(2){
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.5fr 1fr ;
+    place-items: space-between;
+    grid-column-gap: 10%;
+}
+
+section.doe-gift .formulier-houder:nth-of-type(5){
+    grid-template-columns: 1fr 0.5fr 0.5fr ;
+    grid-template-rows: 0.5fr 1fr ;
+    grid-column-gap: 10%;
+}
+
+section.doe-gift .formulier-houder:nth-of-type(6){
+    grid-template-columns: 0.5fr 1fr ;
+    grid-template-rows: 0.5fr 1fr ;
+    grid-column-gap: 10%;
+}
+
+section.doe-gift .formulier-houder:nth-of-type(7){
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.5fr 1fr ;
+    grid-column-gap: 10%;
+}
+
+.top-tekst-formulier{
+    color: #184180 ;
+    font-family: inria-sans-bold;
+    font-size: 38px;
+    /* margin-top: 20%; */
+}
+
+.formulier-blok-tekst{
+    color: black;
+    font-size: 14px;
+}
+
+.formulier-blok-tekst::after{
+    content: attr(data-end);
+    color: #C14326;
+}
+
+
+.formulier-blok4{
+    background-color: white;
+    border: solid #DDDDDD 3px;
+    color: #99AAAA;
+    text-align: left;
+    font-size: 24px;
+    padding: 6%;
+}
+
+.formulier-blok3{
+    background-color: white;
+    border: solid #DDDDDD 3px;
+    color: #99AAAA;
+    text-align: left;
+    font-size: 24px;
+    padding: 8%;
+}
+
+.formulier-blok2{
+    background-color: white;
+    border: solid #DDDDDD 3px;
+    color: #99AAAA;
+    text-align: left;
+    font-size: 24px;
+    padding: 8%;
+}
+
+
+.formulier-blok{
+    background-color: white;
+    border: solid #DDDDDD 3px;
+    color: #99AAAA;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center;     */
+    /* align-items: center; */
+    text-align: left;
+    font-size: 24px;
+    padding: 3.5%;
+}
+
+.place-contact-formulier{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    place-items: right;
+    /* gap: 2.7em; */
+    grid-column-gap: 5em;
+    grid-row-gap: 6em;
+    padding: 8.5%;
+    margin-top: 20%;
+}
+
+.tekst-contact{
+    display: grid;
+    grid-template-columns: 1frr;
+    grid-template-rows: 0.5fr 0.5fr 1fr ;
+    color: #184180 ;
+    font-family: inria-sans-bold;
+    font-size: 48px;
+}
+
+.contact-tekst{
+    font-family: inria-sans-regular;
+    font-size: 28px;
+}
+
+.contact-tekst-red{
+    color: #C14326;
+    font-family: inria-sans-regular;
+    font-size: 28px;
+}
+
+.contact-formulier-doe-gift{
+    background-color: #CBE7E6;
     /* color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center;    
-    padding: 10%;
-    width: 22em;
-    height: 11em;
+    align-self: right;
+    justify-self: right;
+    padding: 14%;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    width: 25em;
+    height: 34em;
+}
+
+.contact-formulier-blok{
+    background-color: white;
+    border: solid #DDDDDD 3px;
+    color: #99AAAA;
+    text-align: left;
+    padding: 6%;
+}
+
+.contact-formulier-blok2{
+    background-color: white;
+    border: solid #DDDDDD 3px;
+    color: #99AAAA;
+    text-align: left;
+    padding: 22%;
+}
+
+
+.place-review{
+    display: grid;
+    /* display: flex; */
+    /* flex-direction: column; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    place-items: center;
+    grid-column-gap: 0em;
+    grid-row-gap: 1em;
+    padding: 8.5%;
+}
+
+.review-sectie-tekst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 20%; */
+    margin-bottom: 0%;
+}
+
+.review-tekst{
+    color: #184180 ;
+    font-family: inria-sans-bold;
+    font-size: 3.9em;
+}
+
+section.reviews .block:nth-of-type(1){
+    background-color: #F39998;
 }
