@@ -28,7 +28,12 @@ nav{
     top: 0;
 
 }
+
 li{
+    list-style-type: none;
+}
+
+.top-navbar-tekst{
     color:  #87CBC9;
     font-family: inria-sans-bold;
     font-size: 30px;
@@ -431,16 +436,16 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     grid-column-gap: 5em;
     grid-row-gap: 6em;
     padding: 8.5%;
-    margin-top: 20%;
+    margin-top: 19%;
 }
 
 .tekst-contact{
     display: grid;
-    grid-template-columns: 1frr;
-    grid-template-rows: 0.5fr 0.5fr 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1fr ;
     color: #184180 ;
     font-family: inria-sans-bold;
-    font-size: 48px;
+    font-size: 58px;
 }
 
 .contact-tekst{
@@ -454,7 +459,7 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     font-size: 28px;
 }
 
-.contact-formulier-doe-gift{
+.contact-formulier{
     background-color: #CBE7E6;
     /* color: red; */
     display: flex;
@@ -464,9 +469,11 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     justify-self: right;
     padding: 14%;
     padding-top: 10%;
-    padding-bottom: 15%;
+    /* padding-bottom: 5%; */
+    /* margin-bottom: 20%; */
+    gap: 4%;
     width: 25em;
-    height: 34em;
+    height: 44em;
 }
 
 .contact-formulier-blok{
@@ -474,7 +481,9 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     border: solid #DDDDDD 3px;
     color: #99AAAA;
     text-align: left;
-    padding: 6%;
+    /* padding: 6%; */
+    width: 25em;
+    height: 15em;
 }
 
 .contact-formulier-blok2{
@@ -482,7 +491,20 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     border: solid #DDDDDD 3px;
     color: #99AAAA;
     text-align: left;
-    padding: 22%;
+    /* padding: 22%; */
+    width: 25em;
+    height: 45em;
+}
+
+.contact-blok-tekst{
+    font-family: inria-sans-bold;
+    font-size: 24px;
+    margin-left: 3%;
+}
+
+.contact-blok-tekst::after{
+    content: attr(data-end);
+    color: #C14326;
 }
 
 
@@ -514,4 +536,84 @@ section.doe-gift .formulier-houder:nth-of-type(7){
 
 section.reviews .block:nth-of-type(1){
     background-color: #F39998;
+}
+
+.footer-top-tekst{
+    background-color: #87CBC9;
+    color: #184180 ;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.1fr 0.1fr 0.7fr ;
+    grid-column-gap: 0em;
+    grid-row-gap: 1em;
+    place-items: center;
+    /* height: 10em; */
+    padding: 1.6em;
+    filter: drop-shadow(0px -6px 4px rgba(0,0,0, 0.25));
+}
+
+.footer-kop-tekst{
+    font-family: inria-sans-bold;
+    font-size: 35px;
+}
+
+.footer-tekst{
+    font-size: 23px;
+}
+
+.footer-top-tekst div:nth-of-type(3){
+    font-family: inria-sans-bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 0.7em;
+    width: 8.5%;
+
+}
+
+.bottom-navbar{
+    background-color: #184180;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.2fr  ;
+    place-items: end;
+    /* float: right; */
+    gap: 0.2em;
+    padding: 4em;
+}
+.bottom-navbar-tekst{
+    font-size: 25px;
+    margin: 30vw;
+}
+
+.bottom-navbar-tekst-white{
+    font-size: 25px;
+    margin: 30vw;
+    color: white;
+
+}
+
+.bottom{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.7em;
+    font-family: inria-sans-bold;
+    font-size: 22px;
+    filter: drop-shadow(0px -6px 4px rgba(0,0,0, 0.25));
+}
+
+.bottom-logo{
+    position: absolute;
+    left: 0;
+    /* bottom: 10; */
+    margin: 0%;
+    /* margin-right: 5%; */
+    padding: 0%;
+    width: 30rem;
+    height: auto;
+}
+
+.bottom div:nth-of-type(3){
+    color: #184180;
 }
