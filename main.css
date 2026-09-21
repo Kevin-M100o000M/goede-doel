@@ -19,6 +19,7 @@ nav{
     background-color: white;
     display: flex;
     flex-direction: row-reverse;
+    align-content: center;
     gap: 0.8em;
     filter: drop-shadow(0px 8px 4px rgba(0,0,0, 0.25));
     position: absolute;
@@ -64,13 +65,23 @@ a{
 }
 .doe-gift-button{
     background-color: #E94264;
-    color: white;
-    padding-inline: 1.2em;
-    margin-left: 1em;
     border-radius: 86px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 1.2em;
+    /* height: 1.4em; */
 }
 
 .doe-gift-kleur{
+    /* color: #87CBC9; */
+    background-color: #E94264;
+    border-radius: 86px;
+    /* position: absolute; */
+    padding: 1em;
+    padding-inline: 2em;
     color: white;
 }
 
@@ -94,6 +105,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 3em;
     padding: 8.5%;
 }
 
@@ -115,12 +127,12 @@ a{
     display: inline;
     text-align: left;
     font-size: 20px;
-    width: 120%;
+    width: 175%;
 }
 
 video{
-    width: 22em;
-    height: 11em;
+    width: 42em;
+    height: 21em;
 }
 
 .banner{
@@ -148,17 +160,32 @@ video{
 }
 
 .sectie-tekst{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 0fr;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin-top: 20%;
     margin-bottom: 0%;
+}
+
+section.top .kop-tekst-sectie:nth-of-type(1){
+    /* color: red; */
+    margin-top: -5%;
 }
 
 .kop-tekst-sectie{
     color: #184180 ;
     font-family: inria-sans-bold;
+    /* font-size: 3.9em; */
+    font-size: 3.4em;
+    text-align: center;
+}
+
+section.top .kop-tekst-sectie:nth-of-type(1){
     font-size: 3.9em;
+    /* color: red; */
 }
 
 .top-tekst-sectie{
@@ -330,22 +357,23 @@ section.raakpunt .raak-image:nth-of-type(3){
     align-self: center;
     justify-self: center;
     padding: 3.5%;
-    padding-top: 10%;
+    padding-top: 8%;
     padding-bottom: 15%;
-    width: 46em;
+    width: 36em;
     height: 40em;
 }
 
 .formulier-houder{
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 0.5fr 1fr ;
+    grid-template-rows: 0.7fr 1.3fr ;
     /* margin-top: 5%; */
+    margin: 0.5%;
 }
 
 section.doe-gift .formulier-houder:nth-of-type(2){
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 0.5fr 1fr ;
+    grid-template-rows: 0.9fr 1.3fr ;
     place-items: space-between;
     grid-column-gap: 10%;
 }
@@ -371,7 +399,7 @@ section.doe-gift .formulier-houder:nth-of-type(7){
 .top-tekst-formulier{
     color: #184180 ;
     font-family: inria-sans-bold;
-    font-size: 38px;
+    font-size: 40px;
     /* margin-top: 20%; */
 }
 
@@ -391,8 +419,8 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     border: solid #DDDDDD 3px;
     color: #99AAAA;
     text-align: left;
-    font-size: 24px;
-    padding: 6%;
+    font-size: 18px;
+    padding: 4%;
 }
 
 .formulier-blok3{
@@ -400,8 +428,9 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     border: solid #DDDDDD 3px;
     color: #99AAAA;
     text-align: left;
-    font-size: 24px;
-    padding: 8%;
+    font-size: 18px;
+    padding: 4%;
+    height: 2.4em;
 }
 
 .formulier-blok2{
@@ -409,8 +438,9 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     border: solid #DDDDDD 3px;
     color: #99AAAA;
     text-align: left;
-    font-size: 24px;
-    padding: 8%;
+    font-size: 18px;
+    padding: 4%;
+    height: 1.8em;
 }
 
 
@@ -423,13 +453,24 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     /* justify-content: center;     */
     /* align-items: center; */
     text-align: left;
-    font-size: 24px;
-    padding: 3.5%;
+    font-size: 18px;
+    padding: 3%;
+}
+
+.formulier-button{
+    background-color: #E94264;
+    border-radius: 86px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 1em;
+    margin-top: 8%;
+    width: 25%;
 }
 
 .place-contact-formulier{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.2fr;
     grid-template-rows: 1fr ;
     place-items: right;
     /* gap: 2.7em; */
@@ -442,21 +483,26 @@ section.doe-gift .formulier-houder:nth-of-type(7){
 .tekst-contact{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.2fr 1fr ;
+    grid-template-rows: 0.1fr 0.2fr 0.2fr 1fr ;
     color: #184180 ;
     font-family: inria-sans-bold;
-    font-size: 58px;
+    font-size: 40px;
+}
+
+.tekst-contact div:nth-of-type(1){
+    color: white;
+    /* margin: 900%; */
 }
 
 .contact-tekst{
     font-family: inria-sans-regular;
-    font-size: 28px;
+    font-size: 23px;
 }
 
 .contact-tekst-red{
     color: #C14326;
     font-family: inria-sans-regular;
-    font-size: 28px;
+    font-size: 23px;
 }
 
 .contact-formulier{
@@ -467,8 +513,10 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     justify-content: center;    
     align-self: right;
     justify-self: right;
+    /* position: absolute; */
     padding: 14%;
-    padding-top: 10%;
+    padding-top: 5%;
+    /* float: right; */
     /* padding-bottom: 5%; */
     /* margin-bottom: 20%; */
     gap: 4%;
@@ -538,27 +586,43 @@ section.reviews .block:nth-of-type(1){
     background-color: #F39998;
 }
 
+footer{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns:  1fr ;
+    grid-template-rows: 0.9fr 1.3fr 0.1fr ;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
 .footer-top-tekst{
     background-color: #87CBC9;
     color: #184180 ;
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 0.1fr 0.1fr 0.7fr ;
+    grid-template-rows: 0.1fr 0.7fr 2.4fr ;
     grid-column-gap: 0em;
-    grid-row-gap: 1em;
+    grid-row-gap: 0.4em;
     place-items: center;
+    /* float: left; */
+    /* position: absolute; */
+    left: 0;
     /* height: 10em; */
-    padding: 1.6em;
+    /* padding-right: 1em; */
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
     filter: drop-shadow(0px -6px 4px rgba(0,0,0, 0.25));
+    max-width: 100%;
 }
 
 .footer-kop-tekst{
     font-family: inria-sans-bold;
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .footer-tekst{
-    font-size: 23px;
+    font-size: 19px;
 }
 
 .footer-top-tekst div:nth-of-type(3){
@@ -576,9 +640,16 @@ section.reviews .block:nth-of-type(1){
     grid-template-columns: 1fr ;
     grid-template-rows: 0.2fr  ;
     place-items: end;
+    /* position: absolute; */
+    left: 0;
     /* float: right; */
     gap: 0.2em;
-    padding: 4em;
+    /* padding: 2em; */
+    /* padding-right: 1em; */
+    padding-top: 2em;
+    padding-bottom:  2em;
+    max-width: 100%;
+    height: auto;
 }
 .bottom-navbar-tekst{
     font-size: 25px;
@@ -597,20 +668,28 @@ section.reviews .block:nth-of-type(1){
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0.7em;
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    /* padding: 0.7em; */
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
     font-family: inria-sans-bold;
     font-size: 22px;
-    filter: drop-shadow(0px -6px 4px rgba(0,0,0, 0.25));
+    filter: drop-shadow(0px -9px 4px rgba(0,0,0, 0.25));
+    max-width: 100%;
 }
 
 .bottom-logo{
     position: absolute;
     left: 0;
-    /* bottom: 10; */
+    bottom: 0;
     margin: 0%;
     /* margin-right: 5%; */
-    padding: 0%;
-    width: 30rem;
+    /* padding: 9%; */
+    /* padding-left: 1.1%; */
+    padding-bottom: 3.1%;
+    width: 24rem;
     height: auto;
 }
 
