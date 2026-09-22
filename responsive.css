@@ -1,0 +1,101 @@
+@media only screen and (max-width: 600px) {
+    body  {
+        /* background-color: red; */
+        width: 100%;
+        max-width: 100%;
+        /* overflow: x; */
+    }
+
+    .top-logo{
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0%;
+        padding: 0%;
+        width: 10rem;
+        height: auto;
+    }
+
+    video{
+        width: 20em;
+        height: 12em;
+        /* margin-left: 100%; */
+    }
+
+    .main-layout{
+        display: grid;
+        grid-template-rows:1fr;
+        justify-content: center;
+    }
+
+    .place-topbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 0.2fr;
+        gap: 0em;
+        /* padding: 0.5%; */
+        /* padding-left: 25.5%; */
+    }
+
+    .topbox{
+        align-items: center;
+        /* padding: 5%; */
+        width: 10em;
+    }
+
+    .top-tekst{
+        font-family: inria-sans-regular;
+        display: inline;
+        text-align: center;
+        font-size: 8px;
+        width: 140%;
+    }
+
+    .sectie-tekst{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 0%;
+    }
+
+    section.top .kop-tekst-sectie:nth-of-type(1){
+        /* color: red; */
+        display: inline;
+        text-align: center;
+        margin-top: -5%;
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    .top-tekst-sectie{
+        color: #184180 ;
+        font-size: 0.4em;
+    }
+
+    .banner-blok{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        margin-top: 12%;
+        /* margin-left: 100.5%; */
+        position: absolute;
+        color: #184180;
+        justify-content: center;
+        width: 8.1em;
+        height: 3.2em;
+        font-family: inria-sans-bold;
+        font-size: 42px;
+        filter: drop-shadow(0px 8px 4px rgba(0,0,0, 0.25));
+    }
+    
+}
+@media only screen and (min-width: 600px) {
+    /* body  {background-color: red;} */
+} 
