@@ -1,9 +1,52 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
     body  {
         /* background-color: red; */
+        /* overflow: hidden; */
+        /* position: relative; */
         width: 100%;
         max-width: 100%;
-        /* overflow: x; */
+    }
+
+    .desktop-nav{
+        display: none;
+    }
+
+    .navdown{
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content{
+        color: red;
+        display: block;
+    }
+
+    .dropdown-bar{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .dropdown-button{
+        background-color: #184180;
+        position: absolute;
+        right: 40%;
+        /* padding-right: 40%; */
+        min-width: 20%;
+    }
+    
+    .dropdown-content{
+        display: none;
+    }
+
+    .dropdown-bar{
+        color: #184180;
+        background-color: #184180;
+        /* position: absolute; */
+        align-self: left;
+        min-width: 200%;
     }
 
     .top-logo{
@@ -17,7 +60,7 @@
     }
 
     video{
-        width: 20em;
+        width: 10em;
         height: 12em;
         /* margin-left: 100%; */
     }
@@ -37,6 +80,7 @@
         gap: 0em;
         /* padding: 0.5%; */
         /* padding-left: 25.5%; */
+        max-width: 100%;
     }
 
     .topbox{
@@ -53,6 +97,43 @@
         width: 140%;
     }
 
+    .steuns-ons{
+        max-width: 100%;
+    }
+
+    .place-blocks{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-content: center;
+        place-content: center;
+        /* width: 80%; */
+        max-width: 100%;
+    }
+
+    section.reviews .icon:nth-of-type(1){
+         padding-left: 2em;
+         padding-bottom: 2em;
+         width: 100px;
+    }
+
+    .icon{
+        width: 4em;
+        margin-bottom: 45%;
+    }
+
+    .block{
+        /* padding: 20%; */
+        /* margin: 20%; */
+        width: 85%;
+        height: 65%;
+        /* max-width: 20%; */
+    }
+
+    .block-tekst{
+        font-size: 10px;
+    }
+
     .sectie-tekst{
         display: grid;
         grid-template-columns: 1fr;
@@ -60,7 +141,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-top: 20%;
+        margin-top: 70%;
         margin-bottom: 0%;
     }
 
@@ -69,33 +150,131 @@
         display: inline;
         text-align: center;
         margin-top: -5%;
-        font-size: 0.9em;
+        font-size: 0.06em;
         width: 100%;
+    }
+
+    .kop-tekst-sectie{
+        color: #184180 ;
+        font-size: 1.5em;
+        margin: 10%;
+        margin-bottom: 3%;
     }
 
     .top-tekst-sectie{
         color: #184180 ;
-        font-size: 0.4em;
+        font-size: 0.8em;
+        margin: 10%;
+        margin-top: 3%;
+    }
+
+    .banner{
+        width: 100%;
+        max-width: 100%;
     }
 
     .banner-blok{
-        background-color: white;
+        font-family: inria-sans-bold;
+        font-size: 22px;
+        margin-top: 50%;
+        width: 5.1em;
+        height: 2.7em;
+    }
+
+    section .banner:nth-of-type(1){
+        display: none;
+    }
+
+    section .banner:nth-of-type(2){
+        display: block;
+    }
+
+    .raak-image{
+        width: 90%;
+    }
+
+    .place-formulier{
+        display: flex;
+        flex-direction: column;
+        /* margin-left: 40%; */
+        /* margin-right: 40%; */
+        margin-top: 25%;
+        margin-bottom: 10%;
+    }
+
+    .formulier-doe-gift{
+        background-color: #CBE7E6;
+        /* color: red; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        align-self: center;
+        justify-self: center;
+        padding: 0%;
+        padding-top: 8%;
+        padding-bottom: 15%;
+        width: 16em;
+        height: 40em;
+    }
+
+    .place-contact-formulier{
         display: grid;
         grid-template-columns: 1fr;
-        place-items: center;
-        margin-top: 12%;
-        /* margin-left: 100.5%; */
-        position: absolute;
-        color: #184180;
-        justify-content: center;
-        width: 8.1em;
-        height: 3.2em;
-        font-family: inria-sans-bold;
-        font-size: 42px;
-        filter: drop-shadow(0px 8px 4px rgba(0,0,0, 0.25));
+        grid-template-rows: 1fr 1fr 1fr ;
+        place-items: right;
+        /* gap: 2.7em; */
+        grid-column-gap: 5em;
+        grid-row-gap: 6em;
+        padding: 8.5%;
+        margin-top: 19%;
     }
-    
+
+    .contact-formulier{
+        width: 50%;
+        max-width: 100%;
+    }
+
+    .contact-formulier-blok{
+        width: 50%;
+        max-width: 100%;
+    }
+
+    .contact-formulier-blok2{
+        width: 50%;
+        max-width: 100%;
+    }
+
+    .footer-top-tekst{
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-top-tekst div:nth-of-type(3) {
+        width: 40%;
+    }
+
+    .bottom-navbar{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .bottom{
+        font-size: 10px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    .bottom-logo{
+        width: 5rem;
+    }
+
 }
+
 @media only screen and (min-width: 600px) {
     /* body  {background-color: red;} */
 } 

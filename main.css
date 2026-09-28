@@ -24,12 +24,15 @@ nav{
     align-content: center;
     gap: 0.8em;
     filter: drop-shadow(0px 8px 4px rgba(0,0,0, 0.25));
-    /* position: fixed; */
     padding: 2em;
     left: 0;
     right:  0;
     top: 0;
 
+}
+
+.navdown{
+    display: none;
 }
 
 li{
@@ -143,6 +146,10 @@ video{
     left: 0;
 }
 
+section .banner:nth-of-type(2){
+    display: none;
+}
+
 .banner-blok{
     background-color: white;
     display: flex;
@@ -206,6 +213,14 @@ section.top .kop-tekst-sectie:nth-of-type(1){
     width: 5.4em ;
 }
 
+section.reviews .icon:nth-of-type(1){
+    padding-left: 22em;
+    padding-bottom: 2em;
+    width: 100px;
+}
+   
+   
+   
 .block{
     background-color: #87CBC9;
     color: white;
@@ -260,6 +275,11 @@ section.over-ons .block:nth-of-type(3){
     text-align: center;
     font-size: 29px;
     width: 120%;
+}
+
+.block-tekst{
+    color: white;
+    text-align: center;
 }
 
 
@@ -551,6 +571,9 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     color: #C14326;
 }
 
+.review-down{
+    padding-top: 18%;
+}
 
 .place-review{
     display: grid;
@@ -562,6 +585,7 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     grid-column-gap: 0em;
     grid-row-gap: 1em;
     padding: 8.5%;
+    /* margin-top: 5%; */
 }
 
 .review-sectie-tekst{
@@ -651,6 +675,7 @@ footer{
     max-width: 100%;
     height: auto;
 }
+
 .bottom-navbar-tekst{
     font-size: 25px;
     margin: 30vw;
