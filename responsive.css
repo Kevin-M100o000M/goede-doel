@@ -50,6 +50,7 @@
     }
 
     .top-logo{
+        display: none;
         position: absolute;
         left: 0;
         top: 0;
@@ -60,7 +61,7 @@
     }
 
     video{
-        width: 10em;
+        width: 20em;
         height: 12em;
         /* margin-left: 100%; */
     }
@@ -92,9 +93,9 @@
     .top-tekst{
         font-family: inria-sans-regular;
         display: inline;
-        text-align: center;
-        font-size: 8px;
-        width: 140%;
+        /* text-align: center; */
+        font-size: 11px;
+        width: 200%;
     }
 
     .steuns-ons{
@@ -130,8 +131,29 @@
         /* max-width: 20%; */
     }
 
+    .block-kop-tekst{
+        font-size: 22px;
+    }
+
     .block-tekst{
-        font-size: 10px;
+        font-size: 13px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .raak-tekst{
+        /* text-align: center; */
+        margin-top: 55%;
+    }
+
+    .raakpunt-kop-tekst{
+        /* text-align: center; */
+        /* width: 150%; */
+    }
+
+    .raakpunt-tekst{
+        font-size: 20px;
+        padding: 0%;
     }
 
     .sectie-tekst{
@@ -163,7 +185,8 @@
 
     .top-tekst-sectie{
         color: #184180 ;
-        font-size: 0.8em;
+        font-size: 16px;
+        text-align: left;
         margin: 10%;
         margin-top: 3%;
     }
@@ -175,10 +198,20 @@
 
     .banner-blok{
         font-family: inria-sans-bold;
-        font-size: 22px;
-        margin-top: 50%;
-        width: 5.1em;
+        font-size: 20px;
+        margin-top: 40%;
+        width: 5.75em;
         height: 2.7em;
+    }
+
+    section.steun-ons .banner-blok:nth-of-type(1){
+        margin-top: 48%;
+    }
+
+    .steuns-ons:nth-child(1){
+        background-color: yellow;
+        color: red;
+        margin-top: 100%;
     }
 
     section .banner:nth-of-type(1){
@@ -198,7 +231,7 @@
         flex-direction: column;
         /* margin-left: 40%; */
         /* margin-right: 40%; */
-        margin-top: 25%;
+        margin-top: 65%;
         margin-bottom: 10%;
     }
 
@@ -211,27 +244,60 @@
         justify-content: center;    
         align-self: center;
         justify-self: center;
-        padding: 0%;
-        padding-top: 8%;
+        padding: 5%;
+        padding-top: 0%;
         padding-bottom: 15%;
-        width: 16em;
+        width: 18em;
         height: 40em;
+    }
+
+    .formulier-blok{
+        width: auto;
+        max-width: 100%;
+    }
+
+    .top-tekst-formulier{
+        font-size: 22px;
+        margin-bottom: 3%;
+    }
+
+    .formulier-blok{
+        font-size: 10px;
+    }
+
+    .formulier-blok2{
+        font-size: 10px;
+    }
+
+    .formulier-blok3{
+        font-size: 10px;
+    }
+
+    .formulier-blok4{
+        font-size: 10px;
     }
 
     .place-contact-formulier{
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr ;
-        place-items: right;
+        grid-template-columns:  1fr;
+        place-items: center;
+        place-content: center;
         /* gap: 2.7em; */
         grid-column-gap: 5em;
         grid-row-gap: 6em;
-        padding: 8.5%;
-        margin-top: 19%;
+        /* position: absolute; */
+        padding: 0%;
+        /* padding-left: 4%; */
+        /* padding-right: 4%; */
+        width: auto;
+        max-width: 100%;
+        /* margin-top: 45%; */
     }
 
     .contact-formulier{
-        width: 50%;
+        /* padding-left: 15%; */
+        /* padding-right: 4%; */
+        width: 40%;
         max-width: 100%;
     }
 
