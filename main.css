@@ -94,13 +94,6 @@ a{
 }
 
 .place-topbox{
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-rows: 1fr ; */
-    /* place-items: space-between; */
-    /* gap: 2.7em; */
-    /* grid-column-gap: 5em; */
-    /* grid-row-gap: 6em; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -196,6 +189,7 @@ section.top .kop-tekst-sectie:nth-of-type(1){
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr ;
     place-items: center;
+    place-content: center;
     /* gap: 2.7em; */
     grid-column-gap: 5em;
     grid-row-gap: 6em;
@@ -203,7 +197,7 @@ section.top .kop-tekst-sectie:nth-of-type(1){
 }
 
 .icon{
-    margin-bottom: 14%; 
+    margin-bottom: 25vh; 
     position: absolute;
     width: 5.4em ;
 }
@@ -213,8 +207,6 @@ section.reviews .icon:nth-of-type(1){
     padding-bottom: 2em;
     width: 100px;
 }
-   
-   
    
 .block{
     background-color: #87CBC9;
@@ -292,7 +284,7 @@ section.over-ons .block:nth-of-type(3){
     display: inline-block;
     text-align: left;
     align-self: left;
-    /* padding-left: 10%; */
+    padding-left: 10%;
     /* padding-right: 50%; */
 }
 
@@ -531,7 +523,7 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     /* padding-bottom: 5%; */
     /* margin-bottom: 20%; */
     gap: 4%;
-    width: 25em;
+    width: 22vw;
     height: 44em;
 }
 
@@ -541,7 +533,7 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     color: #99AAAA;
     text-align: left;
     /* padding: 6%; */
-    width: 25em;
+    width: 22vw;
     height: 15em;
 }
 
@@ -551,7 +543,7 @@ section.doe-gift .formulier-houder:nth-of-type(7){
     color: #99AAAA;
     text-align: left;
     /* padding: 22%; */
-    width: 25em;
+    width: 22vw;
     height: 45em;
 }
 
@@ -689,9 +681,8 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     /* position: absolute; */
-    left: 0;
-    bottom: 0;
-    /* padding: 0.7em; */
+    /* left: 0; */
+    /* bottom: 0; */
     padding-top: 0.7em;
     padding-bottom: 0.7em;
     font-family: inria-sans-bold;
