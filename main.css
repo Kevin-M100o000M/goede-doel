@@ -122,6 +122,13 @@ a{
     width: 175%;
 }
 
+section .top-tekst:nth-of-type(2){
+    display: none;
+}
+section .top-tekst:nth-of-type(3){
+    display: none;
+}
+
 video{
     width: 42em;
     height: 21em;
@@ -276,8 +283,13 @@ section.over-ons .block:nth-of-type(3){
     align-items: left;
     margin-top: 20%;
     margin-bottom: 0%;
-    color: #E94264;
+    /* color: #E94264; */
 }
+
+/* section .raak-tekst:nth-of-type(1){ */
+    /* display: inline; */
+/* } */
+
 
 .raakpunt-kop-tekst{
     /* width: 100%; */
@@ -289,9 +301,20 @@ section.over-ons .block:nth-of-type(3){
 }
 
 .raakpunt-tekst{
+    color: #184180;
     padding-left: 10%;
     padding-right: 35%;
     font-size: 18.5px;
+}
+
+/* section .raakpunt-tekst:nth-of-type(1){ */
+    /* display: inline; */
+/* } */
+section .raakpunt-tekst:nth-of-type(4){
+    display: none;
+}
+section .raakpunt-tekst:nth-of-type(3){
+    display: none;
 }
 
 .raak-image{

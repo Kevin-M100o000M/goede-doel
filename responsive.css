@@ -27,9 +27,31 @@
         display: block;
     }
 
+    .dropdown{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     .dropdown:hover .dropdown-content{
+        font-family: inria-sans-bold;
+        background-color: white;
+        font-size: 30px;
+        padding: 10%;
+        /* margin-top: 100%; */
         color: red;
         display: block;
+    }
+
+    .dropdown .dropdown-button:nth-of-type(2){
+        background-color: red;
+        color: yellow;
+        top: 2.4em;
+    }
+
+    .dropdown .dropdown-button:nth-of-type(3){
+        background-color: red;
+        color: yellow;
+        top: 2.9em;
     }
 
     .dropdown-bar{
@@ -37,12 +59,23 @@
         max-width: 100%;
     }
 
+    .dropdown-text{
+        /* background-color: white; */
+        /* padding: 5%; */
+        /* margin: 10%; */
+    }
+
     .dropdown-button{
         background-color: #184180;
+        display: flex;
+        align-items: start;
+        align-content: center;
         position: absolute;
-        right: 40%;
+        /* right: 40%; */
+        width: 50%;
         /* padding-right: 40%; */
         min-width: 20%;
+        height: 5%;
     }
     
     .dropdown-content{
@@ -50,11 +83,9 @@
     }
 
     .dropdown-bar{
-        color: #184180;
-        background-color: #184180;
+        color: red;
         /* position: absolute; */
-        align-self: left;
-        min-width: 200%;
+        min-width: 100%;
     }
 
     .top-logo{
@@ -96,16 +127,29 @@
     .topbox{
         align-items: center;
         /* padding: 5%; */
+        margin-bottom: 80%;
         width: 10em;
     }
 
     .top-tekst{
         font-family: inria-sans-regular;
         display: inline;
+        font-size: 18px;
         /* text-align: center; */
-        font-size: 12px;
+        margin-bottom: 10%;
         width: 200%;
     }
+
+    section .top-tekst:nth-of-type(1){
+        display: none;
+    }
+    section .top-tekst:nth-of-type(2){
+        display: inline;
+    }
+    section .top-tekst:nth-of-type(3){
+        display: inline;
+    }
+    
 
     .steuns-ons{
         max-width: 100%;
@@ -161,8 +205,18 @@
     }
 
     .raakpunt-tekst{
-        font-size: 20px;
+        font-size: 15px;
         padding: 0%;
+    }
+
+    section .raakpunt-tekst:nth-of-type(2){
+        display: none;
+    }
+    section .raakpunt-tekst:nth-of-type(4){
+        display: inline;
+    }
+    section .raakpunt-tekst:nth-of-type(3){
+        display: inline;
     }
 
     .sectie-tekst{
@@ -186,15 +240,20 @@
     }
 
     .kop-tekst-sectie{
+        /* display: inline; */
         color: #184180 ;
-        font-size: 1.5em;
-        margin: 10%;
+        font-size: 1.6em;
+        text-align: center;
+        margin-top: 10%;
+        /* margin: 10%; */
         margin-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .top-tekst-sectie{
         color: #184180 ;
-        font-size: 16px;
+        font-size: 18px;
         text-align: left;
         margin: 10%;
         margin-top: 3%;
@@ -359,7 +418,19 @@
         width: 40%;
     }
 
+    .footer-kop-tekst{
+        /* padding: 5%; */
+        font-size: 24px;
+    }
+
+    .footer-tekst{
+        font-size: 14px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
     .bottom-navbar{
+        place-items: center;
         width: 100%;
         max-width: 100%;
         height: auto;
